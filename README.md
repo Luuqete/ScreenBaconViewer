@@ -35,13 +35,13 @@ The discovery mechanism uses UDP broadcast to find devices on the local network.
 ## Requirements
 
 - An Android device.
-- A computer running [ScreenBacon](LINK_TO_SCREENBACON_REPOSITORY).
+- A computer running [ScreenBacon](https://github.com/Luuqete/ScreenBacon).
 - Both devices connected to the same local network.
 - Network permissions and firewall settings that allow the required communication.
 
 ## Installation
 
-1. Open the [latest release](LINK_TO_GITHUB_RELEASES).
+1. Open the [latest release](https://github.com/Luuqete/ScreenBaconViewer/releases/tag/v1.0.0).
 2. Download the APK asset.
 3. Install the APK on your Android device.
 4. Start ScreenBacon on your computer.
