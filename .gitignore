@@ -1,0 +1,74 @@
+# Built application files
+*.apk
+*.aar
+*.ap_
+*.aab
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files / Build outputs
+bin/
+**/bin/
+gen/
+build/
+**/build/
+out/
+
+# Local configuration file (SDK path, etc.)
+local.properties
+
+# Gradle files and cache
+.gradle/
+buildOutputCleanup/
+
+# Android Studio / IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+.shelf/
+
+# Android Studio Navigation editor temp files
+.navigation/
+
+# Android Studio Profiler & Captures
+captures/
+
+# NDK / C++ build files
+.cxx/
+.externalNativeBuild/
+
+# Keystore / Signing credentials (seguridad)
+*.jks
+*.keystore
+
+# VS Code
+.vscode/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# Logs & temp files
+*.log
+*.tmp
+*.bak
+
+# Copia de seguridad local previa
+ScreenBaconViewerBC/
+

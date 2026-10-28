@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:background="#24956B">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingresa los datos del servidor Deskreen / ScreenBacon:"
+            android:textColor="#F2F2F2"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <!-- IP del Dispositivo -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IP del Dispositivo"
+            android:textColor="#D9738E"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etManualIp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Ej: 192.168.1.50"
+            android:textColor="#F2F2F2"
+            android:textColorHint="#2A3740"
+            android:backgroundTint="#2A3740"
+            android:inputType="textUri"
+            android:singleLine="true"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Puerto -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Puerto"
+            android:textColor="#D9738E"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etManualPort"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="3131"
+            android:hint="3131"
+            android:textColor="#F2F2F2"
+            android:textColorHint="#2A3740"
+            android:backgroundTint="#2A3740"
+            android:inputType="number"
+            android:singleLine="true"
+            android:layout_marginBottom="16dp" />
+
+        <!-- ID de la Sala -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID de la Sala"
+            android:textColor="#D9738E"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etManualSessionId"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Ej: 837301"
+            android:textColor="#F2F2F2"
+            android:textColorHint="#2A3740"
+            android:backgroundTint="#2A3740"
+            android:inputType="text"
+            android:singleLine="true"
+            android:layout_marginBottom="8dp" />
+
+    </LinearLayout>
+</ScrollView>

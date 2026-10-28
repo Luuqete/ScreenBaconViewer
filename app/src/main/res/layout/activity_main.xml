@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2A3740">
+
+    <!-- WebView en pantalla completa para reproducir el stream de Deskreen -->
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <!-- Overlay de Reconexión superpuesto sobre el WebView -->
+    <LinearLayout
+        android:id="@+id/layoutReconnecting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#E61A2228" 
+        android:padding="32dp"
+        android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ProgressBar
+            android:id="@+id/pbReconnecting"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:indeterminate="true"
+            android:indeterminateTint="#D9738E"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvReconnecting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reconnecting_message"
+            android:textColor="#F2F2F2"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/btnCancelReconnection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:backgroundTint="#24956B"
+            android:textColor="#F2F2F2"
+            android:paddingHorizontal="24dp" />
+
+    </LinearLayout>
+
+    <!-- Capa de descubrimiento de servidores UDP y Conexión Manual -->
+    <LinearLayout
+        android:id="@+id/layoutServerDiscovery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="12dp"
+        android:gravity="center_horizontal"
+        android:visibility="visible">
+
+        <!-- Encabezado con Título y Botones de Conexión Manual / QR -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/tvAppTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ScreenBacon Viewer"
+                android:textColor="#F2F2F2"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- Botón Conexión Manual (Campos IP/Puerto/Sala) -->
+            <Button
+                android:id="@+id/btnManualConnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/manual_connect_button"
+                android:textAllCaps="false"
+                android:backgroundTint="#24956B"
+                android:textColor="#F2F2F2"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp"
+                android:paddingHorizontal="16dp" />
+
+            <!-- Botón Escanear QR -->
+            <Button
+                android:id="@+id/btnScanQr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scan_qr_button"
+                android:textAllCaps="false"
+                android:backgroundTint="#D9738E"
+                android:textColor="#F2F2F2"
+                android:textStyle="bold"
+                android:paddingHorizontal="16dp" />
+
+        </LinearLayout>
+
+        <!-- Estado de búsqueda / Animación de progreso -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <ProgressBar
+                android:id="@+id/pbScanning"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="10dp"
+                android:indeterminate="true"
+                android:indeterminateTint="#D9738E" />
+
+            <TextView
+                android:id="@+id/tvStatusHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Escuchando servidores en la red local..."
+                android:textColor="#F2F2F2"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- Lista de Servidores Disponibles -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvServers"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingTop="4dp"
+            android:paddingBottom="12dp"
+            tools:listitem="@layout/item_server" />
+
+    </LinearLayout>
+
+</FrameLayout>

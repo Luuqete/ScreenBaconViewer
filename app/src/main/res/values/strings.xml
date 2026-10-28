@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ScreenBaconViewer</string>
+    <string name="servers_found_count">Servidores encontrados: %1$d</string>
+    <string name="dialog_title_auto_connect">Conexión Automática</string>
+    <string name="dialog_msg_auto_connect">¿Desea conectarse automáticamente al servidor (%1$s vía %2$s) en el futuro?</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+    <string name="cancel">Cancelar</string>
+    <string name="connect">Conectar</string>
+    <string name="reconnecting_message">Reconectando a ScreenBacon...</string>
+    <string name="scan_qr_button">Escanear QR</string>
+    <string name="manual_connect_button">Conexión Manual</string>
+    <string name="manual_connect_title">Conexión Manual</string>
+    <string name="qr_prompt">Apunta la cámara al código QR de Deskreen</string>
+    <string name="camera_permission_required">Se requiere permiso de cámara para escanear el código QR.</string>
+    <string name="invalid_url_error">La URL o datos ingresados no son válidos.</string>
+    <string name="fill_all_fields_error">Por favor completa todos los campos (IP, Puerto y Sala).</string>
+</resources>
