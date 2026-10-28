@@ -8,9 +8,9 @@ Instead of manually entering connection details, the application can discover Sc
 
 ## Download
 
-**[Download the latest APK](LINK_TO_GITHUB_RELEASES)**
+**[Download the latest APK](https://github.com/Luuqete/ScreenBaconViewer/releases/tag/v1.0.0)**
 
-You can find the latest version in the [GitHub Releases](LINK_TO_GITHUB_RELEASES) section.
+You can find the latest version in the [GitHub Releases](https://github.com/Luuqete/ScreenBaconViewer/releases/tag/v1.0.0) section.
 
 > **Note:** ScreenBaconViewer is distributed as an APK and is not available on the Google Play Store. You may need to allow installation from your browser or file manager to install it.
 
